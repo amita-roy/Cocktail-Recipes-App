@@ -13,9 +13,9 @@ export const fetchCocktails = async () => {
   }
 };
 
-export const fetchFilteredCocktails = async (filterInput) => {
+export const fetchFilteredCocktails = async (searchTerm) => {
   try {
-    const response = await client.get(`/search.php?s=${filterInput}`);
+    const response = await client.get(`/search.php?s=${searchTerm}`);
     return response.data.drinks;
   } catch (error) {
     return error;
