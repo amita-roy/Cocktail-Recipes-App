@@ -13,6 +13,15 @@ export const fetchCocktails = async () => {
   }
 };
 
+export const fetchFilteredCocktails = async (filterInput) => {
+  try {
+    const response = await client.get(`/filter.php?i=${filterInput}`);
+    return response.data.drinks;
+  } catch (error) {
+    return error;
+  }
+};
+
 export const fetchCocktail = async ({ id }) => {
   try {
     const response = await client.get(`/lookup.php?i=${id}`);
