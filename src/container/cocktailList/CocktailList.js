@@ -11,8 +11,6 @@ class CocktailList extends PureComponent {
 
   render() {
     const { cocktails } = this.props;
-
-    console.log(cocktails);
     return (
       <div>
         {cocktails && cocktails.map((cocktail) => (
