@@ -9,11 +9,15 @@ import App from './components/app/App';
 
 import './index.css';
 
+const initialState = {
+  cocktails: [],
+};
+
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(rootReducer, initialState, composeEnhancer(applyMiddleware(thunk)));
 
 ReactDOM.render(
-  <Provider>
+  <Provider store={store}>
     <BrowserRouter>
       <React.StrictMode>
         <App />
