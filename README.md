@@ -1,8 +1,8 @@
 # Catalogue Of Recipes
 
-### Day1 => Milestone1
+### Day1 => Milestone2
 
-> in progress....
+> Completed
 
 ## Getting Started with Create React App
 
