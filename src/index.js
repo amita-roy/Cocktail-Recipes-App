@@ -11,6 +11,7 @@ import './index.css';
 
 const initialState = {
   cocktails: [],
+  cocktail: {},
 };
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

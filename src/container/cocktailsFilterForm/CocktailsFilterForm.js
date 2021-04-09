@@ -22,6 +22,7 @@ class CocktailsFilterForm extends PureComponent {
     const { loadFilteredCocktails } = this.props;
     const { query } = this.state;
     loadFilteredCocktails(query);
+    this.setState({ query: '' });
   }
 
   render() {
