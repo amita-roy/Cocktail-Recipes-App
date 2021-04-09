@@ -23,3 +23,7 @@ export const loadCocktail = (id) => async (dispatch) => {
   const response = await fetchCocktail(id);
   dispatch({ type: ACTIONS.LOAD_COCKTAIL, payload: response });
 };
+
+export const clearPreviousCocktail = () => ({
+  type: ACTIONS.CLEAR_PREVIOUS_COCKTAIL,
+});

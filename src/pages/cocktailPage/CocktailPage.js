@@ -10,6 +10,11 @@ class CocktailPage extends PureComponent {
     loadCocktail(match.params.id);
   }
 
+  componentWillUnmount() {
+    const { clearPreviousCocktail } = this.props;
+    clearPreviousCocktail();
+  }
+
   render() {
     const { cocktail } = this.props;
     return (
@@ -22,6 +27,7 @@ class CocktailPage extends PureComponent {
 }
 
 CocktailPage.propTypes = {
+  clearPreviousCocktail: PropTypes.func.isRequired,
   loadCocktail: PropTypes.func.isRequired,
   match: PropTypes.shape({
     params: PropTypes.shape({ id: PropTypes.string.isRequired }),
