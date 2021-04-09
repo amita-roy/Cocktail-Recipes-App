@@ -22,9 +22,10 @@ export const fetchFilteredCocktails = async (searchTerm) => {
   }
 };
 
-export const fetchCocktail = async ({ id }) => {
+export const fetchCocktail = async ({ idDrink }) => {
   try {
-    const response = await client.get(`/lookup.php?i=${id}`);
+    const response = await client.get(`/lookup.php?i=${idDrink}`);
+    console.log(response);
     return response;
   } catch (error) {
     return error;
