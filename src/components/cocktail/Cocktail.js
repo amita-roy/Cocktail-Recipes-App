@@ -8,10 +8,8 @@ const Cocktail = ({ cocktail }) => (
 );
 
 Cocktail.propTypes = {
-  cocktail: PropTypes.objectOf(
-    PropTypes.shape({
-      strDrink: PropTypes.string,
-    }),
+  cocktail: PropTypes.shape(
+    { strDrink: PropTypes.string },
   ).isRequired,
 };
 

@@ -1,12 +1,34 @@
 import React, { PureComponent } from 'react';
-// import { connect } from 'react-redux';
-// import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import * as Actions from '../../actions/cocktailsActions';
+import Cocktail from '../../components/cocktail/Cocktail';
 
 class CocktailPage extends PureComponent {
+  componentDidMount() {
+    const { match, loadCocktail } = this.props;
+    loadCocktail(match.params.id);
+  }
+
   render() {
-    return <div />;
+    const { cocktail } = this.props;
+    return (
+      <div>
+        <Cocktail cocktail={cocktail && cocktail} />
+      </div>
+    );
   }
 }
 
+CocktailPage.propTypes = {
+  loadCocktail: PropTypes.func.isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({ id: PropTypes.string.isRequired }),
+  }).isRequired,
 
-export default CocktailPage;
+  cocktail: PropTypes.shape({ strDrink: PropTypes.string }).isRequired,
+};
+
+const mapStateToProps = (state) => ({ cocktail: state.cocktail });
+
+export default connect(mapStateToProps, Actions)(CocktailPage);

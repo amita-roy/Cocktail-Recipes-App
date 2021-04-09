@@ -19,7 +19,7 @@ export const loadFilteredCocktails = (query) => async (dispatch) => {
   }
 };
 
-export const loadCocktail = (cocktail) => async (dispatch) => {
-  const response = await fetchCocktail(cocktail);
+export const loadCocktail = (id) => async (dispatch) => {
+  const response = await fetchCocktail(id);
   dispatch({ type: ACTIONS.LOAD_COCKTAIL, payload: response });
 };
