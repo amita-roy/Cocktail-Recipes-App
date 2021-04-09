@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import * as Actions from '../../actions/cocktailsActions';
 
 import './CocktailList.css';
+import Spinner from '../../components/spinner/Spinner';
 
 class CocktailList extends PureComponent {
   componentDidMount() {
@@ -21,8 +22,8 @@ class CocktailList extends PureComponent {
     const { cocktails } = this.props;
     return (
       <div className="cocktailList">
-        {cocktails
-          && cocktails.map((cocktail) => (
+        {cocktails.length ? (
+          cocktails.map((cocktail) => (
             <Link
               to={`/cocktails/${cocktail.idDrink}`}
               key={cocktail.idDrink}
@@ -31,7 +32,7 @@ class CocktailList extends PureComponent {
               <img src={cocktail.strDrinkThumb} alt={cocktail.idDrink} />
               <h4>{cocktail.strDrink}</h4>
             </Link>
-          ))}
+          ))) : <Spinner /> }
       </div>
     );
   }

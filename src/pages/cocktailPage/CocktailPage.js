@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as Actions from '../../actions/cocktailsActions';
 import Cocktail from '../../components/cocktail/Cocktail';
+import Spinner from '../../components/spinner/Spinner';
 
 class CocktailPage extends PureComponent {
   componentDidMount() {
@@ -14,7 +15,8 @@ class CocktailPage extends PureComponent {
     const { cocktail } = this.props;
     return (
       <div>
-        <Cocktail cocktail={cocktail && cocktail} />
+        {cocktail === undefined ? <Spinner /> : <Cocktail cocktail={cocktail && cocktail} />}
+
       </div>
     );
   }
