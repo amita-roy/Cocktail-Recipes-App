@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as Actions from '../../actions/cocktailsActions';
 
+import './CocktailList.css';
+
 class CocktailList extends PureComponent {
   componentDidMount() {
     const { loadCocktails } = this.props;
@@ -12,9 +14,14 @@ class CocktailList extends PureComponent {
   render() {
     const { cocktails } = this.props;
     return (
-      <div>
+      <div className="cocktailList">
         {cocktails && cocktails.map((cocktail) => (
-          <h4 key={cocktail.idDrink}>{cocktail.strDrink}</h4>))}
+          <div key={cocktail.idDrink} className="cocktailList-item">
+            <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+            <h4>{cocktail.strDrink}</h4>
+          </div>
+        ))}
+
       </div>
     );
   }
