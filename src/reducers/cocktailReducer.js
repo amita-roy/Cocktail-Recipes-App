@@ -1,6 +1,7 @@
 import ACTIONS from '../actions/actionTypes';
 
-const cocktailReducer = (state = {}, action) => {
+const initialState = {};
+const cocktailReducer = (state = initialState, action) => {
   switch (action.type) {
     case ACTIONS.LOAD_COCKTAIL:
       return action.payload;
