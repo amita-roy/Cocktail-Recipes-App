@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as Actions from '../../actions/cocktailsActions';
@@ -11,27 +12,36 @@ class CocktailList extends PureComponent {
     loadCocktails();
   }
 
+  handleClick = (cocktail) => {
+    const { loadCocktail } = this.props;
+    loadCocktail(cocktail);
+  }
+
   render() {
     const { cocktails } = this.props;
     return (
       <div className="cocktailList">
-        {cocktails && cocktails.map((cocktail) => (
-          <div key={cocktail.idDrink} className="cocktailList-item">
-            <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
-            <h4>{cocktail.strDrink}</h4>
-          </div>
-        ))}
-
+        {cocktails
+          && cocktails.map((cocktail) => (
+            <Link
+              to={`/cocktails/${cocktail.idDrink}`}
+              key={cocktail.idDrink}
+              className="cocktailList-item"
+            >
+              <img src={cocktail.strDrinkThumb} alt={cocktail.idDrink} />
+              <h4>{cocktail.strDrink}</h4>
+            </Link>
+          ))}
       </div>
     );
   }
 }
 
 CocktailList.propTypes = {
+  loadCocktail: PropTypes.func.isRequired,
   loadCocktails: PropTypes.func.isRequired,
-  cocktails: PropTypes.arrayOf(
-    PropTypes.shape({ id: PropTypes.number }),
-  ).isRequired,
+  cocktails: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.number }))
+    .isRequired,
 };
 
 const mapStateToProps = (state) => ({ cocktails: state.cocktails });

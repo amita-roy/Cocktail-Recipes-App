@@ -25,8 +25,7 @@ export const fetchFilteredCocktails = async (searchTerm) => {
 export const fetchCocktail = async ({ idDrink }) => {
   try {
     const response = await client.get(`/lookup.php?i=${idDrink}`);
-    console.log(response);
-    return response;
+    return response.data.drinks[0];
   } catch (error) {
     return error;
   }
