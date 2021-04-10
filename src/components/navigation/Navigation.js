@@ -8,9 +8,6 @@ const Navigation = () => {
     <div className="navigation-wrapper">
       <nav>
         <NavLink to="/" exact activeStyle={activeStyle}>
-          Home
-        </NavLink>
-        <NavLink to="/cocktails" exact activeStyle={activeStyle}>
           Cocktails
         </NavLink>
       </nav>

@@ -1,8 +1,6 @@
 .navigation-wrapper {
   border: 1px solid blue;
   height: 80px;
-  position: fixed;
-  width: 1400px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -10,4 +8,9 @@
 
 .navigation-wrapper nav {
   padding: 0 50px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 32px;
 }
