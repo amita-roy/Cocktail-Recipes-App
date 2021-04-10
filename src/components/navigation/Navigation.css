@@ -5,7 +5,7 @@
   justify-content: flex-end;
   position: fixed;
   z-index: 99;
-  width: 1400px;
+  width: 100%;
 }
 
 .navigation-wrapper nav {
