@@ -1,9 +1,11 @@
 .navigation-wrapper {
-  border: 1px solid blue;
-  height: 80px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: fixed;
+  z-index: 99;
+  width: 1400px;
 }
 
 .navigation-wrapper nav {
