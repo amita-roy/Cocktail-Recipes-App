@@ -22,4 +22,18 @@
   border-radius: 25px;
   margin-left: -88px;
   border: none;
+  background-color: #343334;
+  color: white;
+}
+
+.cocktailsFilterForm form button:hover {
+  background-color: silver;
+  color: #343334;
+}
+
+.cocktailsFilterForm form input:active,
+.cocktailsFilterForm form input:focus,
+.cocktailsFilterForm form button:focus,
+.cocktailsFilterForm form button:active {
+  outline: none;
 }
