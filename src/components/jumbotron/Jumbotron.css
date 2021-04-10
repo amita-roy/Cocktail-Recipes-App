@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  z-index: -1;
 }
 
 .text-content {
