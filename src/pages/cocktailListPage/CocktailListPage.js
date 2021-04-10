@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../../components/header/Header';
+import Jumbotron from '../../components/jumbotron/Jumbotron';
 import CocktailList from '../../container/cocktailList/CocktailList';
 import CocktailsFilterForm from '../../container/cocktailsFilterForm/CocktailsFilterForm';
 
 const CocktailListPage = () => (
   <div>
-    <Header />
+    <Jumbotron />
     <CocktailsFilterForm />
     <CocktailList />
   </div>

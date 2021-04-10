@@ -1,0 +1,38 @@
+.jumbotron {
+  height: 600px;
+  border: 1px solid blue;
+  background-image: url(https://images.unsplash.com/photo-1595751866979-de6e9d606220?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2552&q=80);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(56, 56, 56, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.jumbotron h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.jumbotron span {
+  display: block;
+  font-size: 7vw;
+  letter-spacing: 0.2vw;
+}
