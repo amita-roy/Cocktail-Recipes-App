@@ -14,5 +14,9 @@
 
 nav a {
   text-decoration: none;
-  font-size: 32px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: rgb(255, 123, 0);
 }

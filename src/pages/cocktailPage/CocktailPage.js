@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as Actions from '../../actions/cocktailsActions';
+import Navigation from '../../components/navigation/Navigation';
 import Cocktail from '../../components/cocktail/Cocktail';
 
 class CocktailPage extends PureComponent {
@@ -19,6 +20,9 @@ class CocktailPage extends PureComponent {
     const { cocktail } = this.props;
     return (
       <div>
+        <div className="header">
+          <Navigation />
+        </div>
         {cocktail && <Cocktail cocktail={cocktail && cocktail} />}
 
       </div>
