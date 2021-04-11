@@ -5,6 +5,8 @@ import * as Actions from '../../actions/cocktailsActions';
 import Navigation from '../../components/navigation/Navigation';
 import Cocktail from '../../components/cocktail/Cocktail';
 
+import './CocktailPage.css';
+
 class CocktailPage extends PureComponent {
   componentDidMount() {
     const { match, loadCocktail } = this.props;
@@ -19,12 +21,14 @@ class CocktailPage extends PureComponent {
   render() {
     const { cocktail } = this.props;
     return (
-      <div>
+      <div className="cocktail-Recipe-page">
         <div className="header">
           <Navigation />
         </div>
-        {cocktail && <Cocktail cocktail={cocktail && cocktail} />}
-
+        <div className="cocktail-recipe">
+          {cocktail && <Cocktail cocktail={cocktail} />}
+        </div>
+        <code><pre>{JSON.stringify(cocktail, null, 2)}</pre></code>
       </div>
     );
   }
