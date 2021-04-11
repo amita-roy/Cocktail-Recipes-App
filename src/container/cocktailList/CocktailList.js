@@ -15,7 +15,12 @@ class CocktailList extends PureComponent {
   handleClick = (cocktail) => {
     const { loadCocktail } = this.props;
     loadCocktail(cocktail);
-  }
+  };
+
+  cardStyle = ({ strDrinkThumb }) => ({
+    backgroundImage: `url(${strDrinkThumb})`,
+    backgroundRepeat: 'no-repeat',
+  });
 
   render() {
     const { cocktails } = this.props;
@@ -29,9 +34,13 @@ class CocktailList extends PureComponent {
               className="cocktailList-item"
             >
               <img src={cocktail.strDrinkThumb} alt={cocktail.idDrink} />
-              <h4>{cocktail.strDrink}</h4>
+              <div className="drinkName-wrapper">
+                <div className="drinkName-wrapper2">
+                  <h4 className="drinkName">{cocktail.strDrink}</h4>
+                </div>
+              </div>
             </Link>
-          )) }
+          ))}
       </div>
     );
   }

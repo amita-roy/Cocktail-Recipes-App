@@ -1,3 +1,4 @@
-.cocktailListPage-container {
-  border: 1px solid blue;
+.main-content {
+  background-color: rgba(219, 219, 219, 1);
+  margin-top: 76px;
 }
