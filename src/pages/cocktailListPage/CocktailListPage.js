@@ -5,7 +5,7 @@ import CocktailsFilterForm from '../../container/cocktailsFilterForm/CocktailsFi
 
 import './CocktailListPage.css';
 
-const CocktailListPage = () => (
+export const CocktailListPage = () => (
   <div>
     <Jumbotron />
     <CocktailsFilterForm />
