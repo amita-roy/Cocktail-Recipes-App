@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import filteredList from './helper';
 
@@ -38,6 +39,7 @@ const Cocktail = ({ cocktail }) => {
           <p>{cocktail.strInstructions}</p>
         </div>
       </div>
+      <Link to="/" className="back-to-home">←</Link>
     </div>
   );
 };
