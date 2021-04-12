@@ -10,7 +10,7 @@ const loadCocktails = () => ({});
 
 const loadCocktail = () => ({});
 
-describe('rendered Cocktails', () => {
+describe('rendered Cocktails List', () => {
   test('has list of multiple coktails links', () => {
     render(
       <BrowserRouter>
