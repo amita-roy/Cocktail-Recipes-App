@@ -70,6 +70,7 @@ Run Test with:
 
 👤 **Amita Roy**
 
+- Amita Roy: [Portfolio](https://amitaroy.com/)
 - Github: [@Amita](https://github.com/Amita-Roy)
 - Twitter: [@Amita](https://twitter.com/AmitaRoy14)
 - Linkedin: [@Amita](https://www.linkedin.com/in/amita-roy-3b823b68/)
