@@ -1,16 +1,79 @@
-# Catalogue Of Recipes
+# Catalogue Of Recipes (Cocktails Recipes)
 
-### Day2 => Milestone1
+- This project is a single page application built with React and Redux
+- App is using API from this website https://www.thecocktaildb.com/
+- The data that was retrieved from the API is getting stored in the Redux store
+- Every page, the main page and pages for each item, have a unique route within the SPA
+- Project is deployed on heroku with mars/create-react-app buildpack
+- Using Jest and React testing liabrary for testing
 
-> Completed
 
-### Day2 => Milestone2
+### Live link
+[The Mixing House]()
 
-> in progress.....
+### Video Presentation
+[Project explanation]()
 
-## Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Screenshots
+
+- ![Cocktail List Page](./screenshots/listPage.png)
+- ![Cocktail Recipe Page](./screenshots/recipePage.png)
+
+
+## Built With
+
+- React
+- Redux
+- Redux Thunk
+- Axios
+- Javascript
+- Jest
+- React Testing Liabrary
+- Fontawesome
+- Google Fonts (Poppins)
+- ESLint
+- Stylelint
+
+
+### Prerequisites
+
+Node
+
+**Setup**
+
+- Clone this repository with: `git clone git@github.com:Amita-Roy/The-Mixing-House.git` using your terminal or command line.
+
+- Change to the project directory by entering cd 'the-mixing-house' in the terminal
+
+- Next run `npm install` to install the necessary dependencies
+
+- Finally run the  `npm run build` and `npm start` to start the application
+
+
+### Usage
+
+Start server with:
+
+```
+    npm start
+```
+
+Run Test with:
+
+```
+    npm test
+```
+
+
+## Author
+
+👤 **Amita Roy**
+
+- Github: [@Amita](https://github.com/Amita-Roy)
+- Twitter: [@Amita](https://twitter.com/AmitaRoy14)
+- Linkedin: [@Amita](https://www.linkedin.com/in/amita-roy-3b823b68/)
+
 
 ## Available Scripts
 
@@ -78,3 +141,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
