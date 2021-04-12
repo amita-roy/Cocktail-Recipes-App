@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as Actions from '../../actions/cocktailsActions';
 import Cocktail from '../../components/cocktail/Cocktail';
@@ -24,6 +25,7 @@ export class CocktailPage extends PureComponent {
         <div className="cocktail-recipe">
           {cocktail && <Cocktail cocktail={cocktail} />}
         </div>
+        <Link to="/" className="back-to-home"><i className="fas fa-arrow-left" /></Link>
       </div>
     );
   }
