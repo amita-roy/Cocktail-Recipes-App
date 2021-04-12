@@ -2,28 +2,40 @@
   font-family: 'Poppins', sans-serif;
   max-width: 500px;
   margin: 0 auto;
+  box-shadow: 10px 10px 38px 4px rgba(51, 51, 51, 0.6);
 }
 
 .cocktailImg-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .cocktailImg-wrapper img {
   width: 100%;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent, transparent, black 90%);
+}
+
 .recipe-content {
   text-align: right;
   padding: 0 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .cocktail-name {
   font-family: 'Poppins', sans-serif;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   margin-top: -124px;
 }
 

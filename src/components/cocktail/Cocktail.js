@@ -18,6 +18,7 @@ const Cocktail = ({ cocktail }) => {
     <div className="cocktail-component">
       <div className="cocktailImg-wrapper">
         <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+        <div className="overlay" />
       </div>
       <div className="recipe-content">
         <h2 className="cocktail-name">{cocktail.strDrink}</h2>
