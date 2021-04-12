@@ -12,7 +12,7 @@
 [The Mixing House](https://the-mixing-house.herokuapp.com/)
 
 ### Video Presentation
-[Project explanation]()
+[Project explanation](https://gist.github.com/Amita-Roy/49affc7d8e1c7558c4a7223c20cb30c0)
 
 
 ### Screenshots
