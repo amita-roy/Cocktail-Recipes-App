@@ -6,10 +6,10 @@ import Cocktail from '../../components/cocktail/Cocktail';
 
 import './CocktailPage.css';
 
-class CocktailPage extends PureComponent {
+export class CocktailPage extends PureComponent {
   componentDidMount() {
     const { match, loadCocktail } = this.props;
-    loadCocktail(match.params.id);
+    loadCocktail(match.params && match.params.id);
   }
 
   componentWillUnmount() {
