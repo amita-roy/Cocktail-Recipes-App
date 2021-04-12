@@ -4,8 +4,6 @@ import filteredList from './helper';
 
 import './Cocktail.css';
 
-// const ingredientsCount = 15;
-
 const Cocktail = ({ cocktail }) => {
   const ingredients = filteredList(cocktail, 'strIngredient');
   const measurements = filteredList(cocktail, 'strMeasure');
