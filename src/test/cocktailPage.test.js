@@ -27,22 +27,6 @@ describe('rendered Cocktail Page', () => {
     );
   });
 
-  //   test('has a div with className drinkName-wrapper', () => {
-  //     render(
-  //       <BrowserRouter>
-  //         <CocktailList
-  //           cocktails={cocktails}
-  //           loadCocktails={loadCocktails}
-  //           loadCocktail={loadCocktail}
-  //         />
-  //       </BrowserRouter>,
-  //     );
-  //     const { container } = render(<div className="drinkName-wrapper" />);
-  //     expect(container.firstChild.classList.contains('drinkName-wrapper')).toBe(
-  //       true,
-  //     );
-  //   });
-
   test('has name of the cocktail', () => {
     render(
       <BrowserRouter>
@@ -69,8 +53,8 @@ describe('rendered Cocktail Page', () => {
         />
       </BrowserRouter>,
     );
-    const element = screen.getByText('←');
-    expect(element).toBeInTheDocument();
+    const { container } = render(<BrowserRouter><Link to="/" className="back-to-home" /></BrowserRouter>);
+    expect(container.hasChildNodes(<i className="fas fa-arrow-left" />)).toBe(true);
   });
 
   test('has link node', () => {
