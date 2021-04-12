@@ -37,7 +37,7 @@ class CocktailsFilterForm extends PureComponent {
             value={query}
             onChange={this.handleChange}
             name="query"
-            placeholder="Search by name"
+            placeholder="Filter by name"
           />
           <button type="submit">Submit</button>
         </form>
