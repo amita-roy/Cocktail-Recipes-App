@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as Actions from '../../actions/cocktailsActions';
-import Navigation from '../../components/navigation/Navigation';
 import Cocktail from '../../components/cocktail/Cocktail';
 
 import './CocktailPage.css';
@@ -22,9 +21,6 @@ class CocktailPage extends PureComponent {
     const { cocktail } = this.props;
     return (
       <div className="cocktail-Recipe-page">
-        <div className="header">
-          <Navigation />
-        </div>
         <div className="cocktail-recipe">
           {cocktail && <Cocktail cocktail={cocktail} />}
           {/* <code><pre>{JSON.stringify(cocktail, null, 2)}</pre></code> */}
