@@ -9,7 +9,7 @@
 
 
 ### Live link
-[The Mixing House]()
+[The Mixing House](https://the-mixing-house.herokuapp.com/)
 
 ### Video Presentation
 [Project explanation]()
