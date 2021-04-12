@@ -5,7 +5,7 @@ import * as Actions from '../../actions/cocktailsActions';
 
 import './CocktailsFilterForm.css';
 
-class CocktailsFilterForm extends PureComponent {
+export class CocktailsFilterForm extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -38,6 +38,7 @@ class CocktailsFilterForm extends PureComponent {
             onChange={this.handleChange}
             name="query"
             placeholder="Filter by name"
+            required
           />
           <button type="submit">Submit</button>
         </form>

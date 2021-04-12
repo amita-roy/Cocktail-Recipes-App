@@ -7,7 +7,7 @@ import * as Actions from '../../actions/cocktailsActions';
 import './CocktailList.css';
 import Loader from '../../components/loader/Loader';
 
-class CocktailList extends PureComponent {
+export class CocktailList extends PureComponent {
   componentDidMount() {
     const { loadCocktails } = this.props;
     loadCocktails();

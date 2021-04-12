@@ -3,7 +3,6 @@
   max-width: 500px;
   margin: 0 auto;
   box-shadow: 10px 10px 38px 4px rgba(51, 51, 51, 0.6);
-  position: relative;
 }
 
 .cocktailImg-wrapper {
@@ -70,15 +69,4 @@
   margin-left: 10px;
   font-size: 14px;
   border-radius: 4px;
-}
-
-.back-to-home {
-  position: absolute;
-  top: 0;
-  font-size: 30px;
-  background-color: rgb(255 255 255 / 70%);
-  font-weight: 900;
-  padding: 0 20px;
-  color: #2a2a2a;
-  text-decoration: none;
 }
