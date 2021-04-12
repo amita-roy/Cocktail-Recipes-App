@@ -30,7 +30,8 @@
   content: '';
   border: 40px solid transparent;
   border-radius: 5px;
-  animation: loader 2s ease-in infinite reverse,
+  animation:
+    loader 2s ease-in infinite reverse,
     spin 0.8s linear infinite reverse;
 }
 
