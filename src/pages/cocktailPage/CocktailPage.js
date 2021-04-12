@@ -23,7 +23,6 @@ class CocktailPage extends PureComponent {
       <div className="cocktail-Recipe-page">
         <div className="cocktail-recipe">
           {cocktail && <Cocktail cocktail={cocktail} />}
-          {/* <code><pre>{JSON.stringify(cocktail, null, 2)}</pre></code> */}
         </div>
       </div>
     );
