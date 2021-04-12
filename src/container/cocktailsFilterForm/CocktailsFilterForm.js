@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as Actions from '../../actions/cocktailsActions';
 
+import './CocktailsFilterForm.css';
+
 class CocktailsFilterForm extends PureComponent {
   constructor(props) {
     super(props);
@@ -28,14 +30,14 @@ class CocktailsFilterForm extends PureComponent {
   render() {
     const { query } = this.state;
     return (
-      <div>
+      <div className="cocktailsFilterForm">
         <form onSubmit={(event) => this.handleSubmit(event)}>
           <input
             type="text"
             value={query}
             onChange={this.handleChange}
             name="query"
-            placeholder="Search by ingredient"
+            placeholder="Filter by name"
           />
           <button type="submit">Submit</button>
         </form>

@@ -1,0 +1,84 @@
+.cocktail-component {
+  font-family: 'Poppins', sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 38px 4px rgba(51, 51, 51, 0.6);
+  position: relative;
+}
+
+.cocktailImg-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.cocktailImg-wrapper img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent,
+      transparent,
+      black 90%
+    );
+}
+
+.recipe-content {
+  text-align: right;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cocktail-name {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.3vw;
+  margin-top: -124px;
+}
+
+.bottom-card {
+  position: relative;
+  background-color: white;
+  color: #171717;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.label {
+  margin-top: 20px;
+}
+
+.tags {
+  margin: 15px 0;
+}
+
+.tag {
+  padding: 5px 10px;
+  background-color: white;
+  color: #171717;
+  margin-left: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.back-to-home {
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+  background-color: rgb(255 255 255 / 70%);
+  font-weight: 900;
+  padding: 0 20px;
+  color: #2a2a2a;
+  text-decoration: none;
+}

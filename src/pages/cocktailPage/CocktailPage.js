@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import * as Actions from '../../actions/cocktailsActions';
 import Cocktail from '../../components/cocktail/Cocktail';
 
+import './CocktailPage.css';
+
 class CocktailPage extends PureComponent {
   componentDidMount() {
     const { match, loadCocktail } = this.props;
@@ -18,9 +20,10 @@ class CocktailPage extends PureComponent {
   render() {
     const { cocktail } = this.props;
     return (
-      <div>
-        {cocktail && <Cocktail cocktail={cocktail && cocktail} />}
-
+      <div className="cocktail-Recipe-page">
+        <div className="cocktail-recipe">
+          {cocktail && <Cocktail cocktail={cocktail} />}
+        </div>
       </div>
     );
   }

@@ -1,0 +1,39 @@
+.cocktailsFilterForm {
+  margin-top: -120px;
+  display: flex;
+  justify-content: center;
+}
+
+.cocktailsFilterForm form {
+  width: 600px;
+  box-shadow: 3px 3px 5px 8px rgba(31, 31, 31, 0.6);
+  border-radius: 25px;
+}
+
+.cocktailsFilterForm form input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+}
+
+.cocktailsFilterForm form button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-left: -84px;
+  border: none;
+  background-color: #343334;
+  color: white;
+}
+
+.cocktailsFilterForm form button:hover {
+  background-color: silver;
+  color: #343334;
+}
+
+.cocktailsFilterForm form input:active,
+.cocktailsFilterForm form input:focus,
+.cocktailsFilterForm form button:focus,
+.cocktailsFilterForm form button:active {
+  outline: none;
+}
