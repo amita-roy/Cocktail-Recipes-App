@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter, Link } from 'react-router-dom';
 import '@testing-library/jest-dom';
-import { CocktailPage } from '../pages/cocktailPage/CocktailPage';
+import { CocktailPage } from '../container/cocktailPage/CocktailPage';
 
 const clearPreviousCocktail = () => ({});
 const loadCocktail = () => ({});
