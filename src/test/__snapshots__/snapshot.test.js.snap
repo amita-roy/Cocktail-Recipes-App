@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App 1`] = `
+<div
+  className="App"
+>
+  <div>
+    <div
+      className="jumbotron"
+    >
+      <div
+        className="text-content"
+      >
+        <div
+          className="title"
+        >
+          <h1>
+            The
+            <span>
+              Mixing
+            </span>
+            <span>
+              House
+            </span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div
+      className="cocktailsFilterForm"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          name="query"
+          onChange={[Function]}
+          placeholder="Filter by name"
+          required={true}
+          type="text"
+          value=""
+        />
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div
+      className="main-content"
+    >
+      <div
+        className="cocktailList"
+      >
+        <div
+          className="spinner-wrapper"
+        >
+          <div
+            className="dizzy-gillespie"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

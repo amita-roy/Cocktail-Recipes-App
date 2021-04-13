@@ -1,0 +1,22 @@
+.cocktail-Recipe-page {
+  color: white;
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, #de6262, #ffb88c);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cocktail-recipe {
+  padding: 120px 90px 90px;
+}
+
+.back-to-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+}
