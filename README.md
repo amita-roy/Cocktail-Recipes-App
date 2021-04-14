@@ -29,7 +29,7 @@
 - Axios
 - Javascript
 - Jest
-- React Testing Liabrary
+- React Testing Library
 - Fontawesome
 - Google Fonts (Poppins)
 - ESLint
